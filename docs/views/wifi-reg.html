@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Example - Branching
+{% endblock %}
+
+{% block beforeContent %}
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-three-quarters">
+
+      <form action="/wifi-landing" method="post">
+
+
+          <fieldset class="nhsuk-fieldset nhsuk-u-padding-bottom-0">
+            <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--xl nhsuk-u-margin-bottom-4">
+              <h1 class="nhsuk-fieldset__heading ">
+                Set up your NHS login to get free wifi 
+              </h1>
+            </legend>
+          </fieldset>
+
+          <p class="nhsuk-lede-text">If you've already done this, <a href="/wifi-login">log in instead</a>.</p>
+
+          <div class="nhsuk-form-group">
+            <label class="nhsuk-label" for="input-with-hint-text">
+              Email address
+            </label>
+            <input class="nhsuk-input" id="input-with-hint-text" name="test-name-2" type="text" aria-describedby="input-with-hint-text-hint">
+          </div>
+
+
+          <div class="nhsuk-form-group">
+            <label class="nhsuk-label" for="input-with-hint-text">
+              Create a password
+            </label>
+            <span class="nhsuk-hint" id="input-with-hint-text-hint">
+              <p>Your password must have:</p>
+                <ul>
+                <li>8 characters or more</li>
+                <li>1 capital letter or more</li>
+              </ul>
+            </span>
+            <input class="nhsuk-input" id="input-with-hint-text" name="test-name-2" type="text" aria-describedby="input-with-hint-text-hint">
+          </div>
+
+          <div class="nhsuk-form-group">
+            <label class="nhsuk-label" for="input-with-hint-text">
+              Confirm password
+            </label>
+            <input class="nhsuk-input" id="input-with-hint-text" name="test-name-2" type="text" aria-describedby="input-with-hint-text-hint">
+          </div>
+
+
+          <p>Information Security</p>
+          <p class="nhsuk-hint">We will collect and store your information in a secure way. We use your personal information in accordance with the site's <a href="">privacy notice</a> and <a href="">terms and conditions</a>.</p>
+
+          <p class="nhsuk-hint">We will not disclose your personal information to any third parties without obtaining your consent.</p>
+
+
+
+        {{ button({
+          "text": "Agree and continue"
+        }) }}
+
+      </form>
+
+    </div>
+  </div>
+{% endblock %}

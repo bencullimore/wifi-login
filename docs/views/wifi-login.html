@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Example - Branching
+{% endblock %}
+
+{% block beforeContent %}
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-three-quarters">
+
+      <form action="/wifi-landing" method="post">
+
+
+          <fieldset class="nhsuk-fieldset nhsuk-u-padding-bottom-0">
+            <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--xl nhsuk-u-margin-bottom-4">
+              <h1 class="nhsuk-fieldset__heading ">
+                Enter your NHS login to get free wifi 
+              </h1>
+            </legend>
+          </fieldset>
+
+          <div class="nhsuk-form-group">
+            <label class="nhsuk-label" for="input-with-hint-text">
+              Email address
+            </label>
+            <input class="nhsuk-input" id="input-with-hint-text" name="test-name-2" type="text" aria-describedby="input-with-hint-text-hint">
+          </div>
+
+          <div class="nhsuk-form-group">
+            <label class="nhsuk-label" for="input-with-hint-text">
+               Password
+            </label>
+            <input class="nhsuk-input" id="input-with-hint-text" name="test-name-2" type="text" aria-describedby="input-with-hint-text-hint">
+          </div>
+
+
+          <p><a href="">Forgotten your password?</p>
+
+
+
+        {{ button({
+          "text": "Continue"
+        }) }}
+
+      </form>
+      <p><a href="/wifi-reg">Set up an NHS login</p>
+
+    </div>
+  </div>
+{% endblock %}
